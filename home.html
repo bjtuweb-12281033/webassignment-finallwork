@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<link rel=stylesheet href="homecss.css"  type="text/css" media="screen">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>剑侠世界</title>
+</head>
+
+<body background="img/bg1.jpg" style="background-position:center">
+<embed src="img/bgm.mp3" width="0" height="0" type=audio/mpeg loop="true" autostart="true" volume="0"></embed>
+<p class="top">
+<a href="index.php">登录</a>|
+<a href="register.php">注册</a>|
+<a href="">充值</a>|
+<a href="">客服</a>|
+<a href="">安全</a></p>
+<p class="homename"><img src="img/title.gif" style="margin-left:10cm"></p>
+<p class="title_1"><img src="img/menpai.gif"></p>
+
+<div id="demo" style="overflow:hidden;width:900px;height:300px;color:#FFFFF; margin-left:6cm">          
+ <table style="align:none; cellpadding:none; cellspace:none; border:none">
+  <tr>
+   <td id=demo1>
+    <table style="border:none cellpadding:none cellspacing:none width:auto">
+		<tr>
+		<td width="100%" height="100%" ><a><img src="img/chunyang.jpg" width=520 height=280 border=none > </a></td>
+		<td width="100%" height="100%"><a><img src="img/cangjian.jpg" width=520 height=280 border=none ></a></td> 
+		<td width="100%" height="100%"><a><img src="img/tiance.jpg" width=520 height=280 border=none ></a></td>
+		<td width="100%" height="100%"><a><img src="img/wudu.jpg" width=520 height=280 border=none ></a></td>
+		<td width="100%" height="100%"><a><img src="img/shaolin.jpg" width=520 height=280  border=none></a></td>
+		</tr>
+	</table>
+   </td>
+   <td id=demo2 style="vertical-align:middle"></td>
+  </tr>
+ </table>
+<script>
+           var speed=30//速度数值越大速度越慢
+           demo2.innerHTML=demo1.innerHTML
+           function Marquee(){
+           if(demo2.offsetWidth-demo.scrollLeft<=0)
+           demo.scrollLeft-=demo1.offsetWidth
+           else{
+           demo.scrollLeft++
+           }
+           }
+           var MyMar=setInterval(Marquee,speed)
+           demo.onmouseover=function() {clearInterval(MyMar)}
+           demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+</script>
+</div>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+  $(".flip1").click(function(){
+    $(".panel1").slideToggle("slow");
+  });
+});
+
+$(document).ready(function(){
+  $(".flip2").click(function(){
+    $(".panel2").slideToggle("slow");
+  });
+});
+
+$(document).ready(function(){
+  $(".flip3").click(function(){
+    $(".panel3").slideToggle("slow");
+  });
+});
+
+$(document).ready(function(){
+  $(".flip4").click(function(){
+    $(".panel4").slideToggle("slow");
+  });
+});
+
+$(document).ready(function(){
+  $(".flip5").click(function(){
+    $(".panel5").slideToggle("slow");
+  });
+});
+</script>
+
+<p class="title_1"><img src="img/xinfa.gif"></p>
+<p><strong><center><<<<<<<<<点击兴趣门派展示心法介绍>>>>>>></center></strong></p>
+<a class="flip1">纯阳</a>
+<a class="flip2">藏剑</a>
+<a class="flip3">天策</a>
+<a class="flip4">五毒</a>
+<a class="flip5">少林</a>
+<div class="panel1">
+<a><img src="img/taixu.jpg">[太虚剑意]</a>
+<a><img src="img/zixia.jpg">[紫霞功]</a></div>
+
+<div class="panel2">
+<a><img src="img/wenshui.jpg">[问水诀]</a>
+<a><img src="img/shanju.jpg">[山居剑意]</a></div>
+
+<div class="panel3">
+<a><img src="img/aoxue.jpg">[傲雪战意]</a>
+<a><img src="img/tielao.jpg">[铁牢律]</a></div>
+
+<div class="panel4">
+<a><img src="img/dujing.jpg">[毒经]</a>
+<a><img src="img/butian.jpg">[补天诀]</a></div>
+
+<div class="panel5">
+<a><img src="img/xisui.jpg">[洗髓经]</a>
+<a><img src="img/yijing.jpg">[易筋经]</a></div>
+
+<p class="title_1"><img src="img/huodong.gif"></p>
+<table class="show">
+  <tr>
+    <td>
+		<div class="news">
+			<ul>
+			<li>[活动]<a href="" target="_blank">注册有礼！首充有奖！</a></li>
+			<li>[新闻]<a href="" target="_blank">我公司与上海知名公司合作</a></li>
+			<li>[新闻]<a href="" target="_blank">美国xx公司策划与我公司进行交流</a></li>
+			<li>[活动]<a href="" target="_blank">6月份儿童节活动</a></li>
+			<li>[公告]<a href="" target="_blank">外挂警告</a></li>
+			<li>[公告]<a href="" target="_blank">5月12日早晨例行维护</a></li>
+			<li>[新闻]<a href="" target="_blank">5月11日玩家见面会顺利举行</a></li>
+			</ul>
+		</div>
+	</td>
+	<td>
+	<div class="news">
+		<marquee direction="up" scrolldelay="100" scrollamount="2" width="480" height="120"
+		onmouseover="this.stop()"  onmouseout="this.start();">                    			&nbsp;&nbsp;&nbsp;《剑侠世界》于2000年成立并开始运营，是由金山软件西山居开发，金山运营的3D武侠角色扮演网游。<br></br>&nbsp;&nbsp;&nbsp;作为系列三部曲的最后一部，凭借大规模的地形植被渲染技术、大量的场景光影特效和SpeedTree等引擎特效来展现中国传统武侠世界，将诗词、歌舞、丝绸、古琴、饮酒文化、茶艺、音乐等多种具有中国传统文化特色的元素融入到游戏中，展现给玩家一个气势恢弘、壮丽华美的大唐世界。<br></br>&nbsp;&nbsp;&nbsp;09年公测以来，《剑网3》为了玩家而开放的电影级画质，历经数年仍在国产武侠网游处于顶峰的位置。《剑网3》致力浓的风格画质、武侠的风格。让玩家在欣赏美景的同时，体验磅礴壮观的武侠世界、恢宏大气的场景，感受武林人士过招的淋漓快感！
+		</marquee>
+	 </td>
+	 </div>
+  </tr>
+</table>
+<br></br>
+<br></br>
+<p class="low">
+<input type="text" size="20S"/>
+<input type="button" value="站内搜索" style="cursor:pointer"/></p>
+<p class="low">健康游戏忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活
+<p class="low">关于我们|服务协议|客服中心|联系我们|诚聘英才|商务合作|网站导航|友情链接
+<p class="low">&copy;2014 JX&nbsp;京ICP证00000号</p>
+</head>
+</body>
+</body>
+</html>
